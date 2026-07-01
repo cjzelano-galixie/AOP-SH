@@ -1,0 +1,40 @@
+Got your form for {{ params.company_name }} — let's get you booked in
+
+<p>Hi {{ params.client_name }},</p>
+
+{{ params.company_count > 1 ? '
+<p>
+  <em
+    >(Quick note: Because we are running parallel setups for your entities,
+    you’ll receive separate checklists for each.)</em
+  >
+</p>
+' : '' }}
+
+<p>
+  Thanks for sending over the form for {{ params.company_name }}—got it right
+  here and we're having a look through the details now.
+</p>
+
+<p>
+  <strong>Next bit is easy:</strong> let's get your kickoff call on the calendar
+  so we can work through the rest together and get you live.
+</p>
+
+<p>
+  Grab whatever time suits you best: 📅
+  <a href="https://calendar.app.google/hmzzBh6vUD1kwru46"
+    >Click here to book your call</a
+  >
+</p>
+
+<hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 24px 0" />
+
+<p>
+  Highest Regards,<br />
+  <b>Chloe Zelano</b><br />
+  Customer Success · Sparrowhawk Labs <br />
+  <a href="mailto:help@sparrowhawklabs.com">help@sparrowhawklabs.com</a> ·
+  <a href="https://app.sparrowhawklabs.com">app.sparrowhawklabs.com</a><br />
+  Sparrowhawk Labs, Inc · 1605 NW Galveston Ave, Bend, OR 97703
+</p>

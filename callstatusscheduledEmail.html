@@ -1,0 +1,45 @@
+Quick bit of prep for {{ params.company_name }}'s call
+
+<p>Hi {{ params.client_name }},</p>
+
+{{ params.company_count > 1 ? '
+<p>
+  <em
+    >(Quick note: Because we are running parallel setups for your entities,
+    you’ll receive separate checklists for each.)</em
+  >
+</p>
+' : '' }}
+
+<p>
+  Looking forward to chatting about <b>{{ params.company_name }}</b> on {{ new
+  Intl.DateTimeFormat('en-AU', { weekday: 'long', day: 'numeric', month: 'long',
+  hour: 'numeric', minute: '2-digit' }).format(new
+  Date(params.booked_call_date)) }}.
+</p>
+
+<p>
+  Just a quick heads up—could you take a crack at the onboarding form
+  beforehand?
+</p>
+
+<p>
+  Even half-filled is spot on, it just saves us sitting around doing admin while
+  we're on the line. 📋
+  <a href="https://sparrowhawkquestionnaire.fillout.com/onboarding"
+    >Click here to open the questionnaire</a
+  >
+</p>
+
+<p>See you on the call!</p>
+
+<hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 24px 0" />
+
+<p>
+  Highest Regards,<br />
+  <b>Chloe Zelano</b><br />
+  Customer Success · Sparrowhawk Labs <br />
+  <a href="mailto:help@sparrowhawklabs.com">help@sparrowhawklabs.com</a> ·
+  <a href="https://app.sparrowhawklabs.com">app.sparrowhawklabs.com</a><br />
+  Sparrowhawk Labs, Inc · 1605 NW Galveston Ave, Bend, OR 97703
+</p>
